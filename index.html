@@ -2,10 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
- 
+
 <!-- If IE use the latest rendering engine -->
 <meta http-equiv="X-UA-Compatible" content="IE=edge">
- 
+
 <!-- Set the page to the width of the device and set the zoom level -->
 <meta name="viewport" content="width = device-width, initial-scale = 1">
 
@@ -35,5 +35,46 @@
 <body>
 	<h1 class="landing-title">Black History Month</h1>
 	<p class="landing-desc">Some description here</p>
+
+    <!--Tabs-->
+    <ul class="tab">
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openMember(event, 'Jackie Robinson')" id="defaultOpen">Jackie Robinson</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openMember(event, 'Ralph Bunche')">Ralph Bunche</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openMember(event, 'FirstName1 LastName1')">FirstName1 LastName1</a></li>
+        <li><a href="javascript:void(0)" class="tablinks" onclick="openMember(event, 'FirstName2 LastName2')">FirstName2 LastName2</a></li>
+    </ul>
+    <div id="Jackie Robinson" class="tabcontent">
+        <p>Video/Picture Here</p>
+    </div>
+    <div id="Ralph Bunche" class="tabcontent">
+        <p>Video/Picture Here</p>
+    </div>
+    <div id="FirstName1 LastName1" class="tabcontent">
+        <p>Video/Picture Here</p>
+    </div>
+    <div id="FirstName2 LastName2" class="tabcontent">
+        <p>Video/Picture Here</p>
+    </div>
+
+    <!-- Script for tabs-->
+    <script>
+    function openMember(evt, memberName){
+        // Variables
+        var i, tabcontent, tablinks;
+
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for(i = 0; i < tabcontent.length; i++){
+            tabcontent[i].style.display = "none";
+        }
+
+        tablinks = document.getElementsByClassName("tablinks");
+        for(i = 0; i < tablinks.length; i++) {
+            tablinks[i].className = tablinks[i].className.replace("active", "");
+        }
+        document.getElementById(memberName).style.display = "block";
+        evt.currentTarget.className += " active";
+    }
+        document.getElementById("defaultOpen").click();
+    </script>
 </body>
 </html>
