@@ -2,6 +2,11 @@ body{
 	font-family: 'Pontano Sans', sans-serif;
 }
 
+iframe{
+    display: block;
+    margin: 0 auto;
+}
+
 .landing-title{
 	padding: 25px;
 	text-align: center;
@@ -11,7 +16,7 @@ body{
 	padding-left: 25px;
 }
 
-.img{
+.section-img{
 	text-align: center;
 }
 
@@ -47,7 +52,8 @@ body{
 
 .tabcontent {
     display: none;
-    padding: 6px 12px;
+    padding-top: 20px;
+    padding-bottom: 20px;
     border: 1px solid #ccc;
     border-top: none;
 	border-bottom:none;
@@ -58,6 +64,11 @@ body{
     animation: fadeEffect 1s; /* Fading effect takes 1 second */
 }
 
+.section-img, .section-video{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
 @-webkit-keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
@@ -66,4 +77,13 @@ body{
 @keyframes fadeEffect {
     from {opacity: 0;}
     to {opacity: 1;}
+}
+
+/*Specifically for videos, where the upper bound width is 560px*/
+@media screen and (max-width: 560px)
+{
+    iframe
+    {
+        width: 100%;
+    }
 }
