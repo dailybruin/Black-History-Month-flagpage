@@ -20,6 +20,10 @@ iframe{
 	text-align: center;
 }
 
+.img-center{
+    margin: 0 auto;
+}
+
 /* Styling for tabs */
 .tab {
     list-style-type:none;
