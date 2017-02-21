@@ -12,9 +12,8 @@ body{
 }
 
 .tab {
-    text-align: center;
     list-style-type:none;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     overflow: hidden;
     border: 1px solid #ccc;
