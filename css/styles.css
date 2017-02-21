@@ -10,7 +10,7 @@ body{
 	padding-left: 25px;
 }
 
-ul.tab {
+.tab {
     list-style-type:none;
     margin: 0;
     padding: 0;
@@ -19,14 +19,15 @@ ul.tab {
     background-color: #f1f1f1;
 }
 
-ul.tab li {
+/*.tab li {
     float: left;
-}
+}*/
 
-ul.tab li a {
+.tab /*li*/ a {
+	float: left;
     display: inline-block;
     color: #9e9e9e;
-    font-family: Helvetica, sans-serif;
+    font-family: 'Pontano Sans', sans-serif;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
@@ -34,11 +35,11 @@ ul.tab li a {
     font-size: 17px;
 }
 
-ul.tab li a:hover {
+.tab /*li*/ a:hover {
     background-color: #c7e4f9;
 }
 
-ul.tab li a:focus, .active {
+.tab /*li*/ a:focus, .active {
     background-color: #ccc;
 }
 
