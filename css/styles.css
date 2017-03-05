@@ -9,10 +9,12 @@ iframe{
 
 .landing-title{
 	padding: 25px;
+    font-size: 44px;
 	text-align: center;
 }
 
 .landing-desc{
+    text-align: center;
 	padding-left: 25px;
 }
 
@@ -35,23 +37,27 @@ iframe{
 }
 
 .tab a {
-	float: left;
     display: inline-block;
     color: #9e9e9e;
     font-family: 'Pontano Sans', sans-serif;
     text-align: center;
     padding: 14px 16px;
     text-decoration: none;
-    transition 0.3s;
+    transition: 0.3s;
     font-size: 17px;
 }
 
 .tab a.hoverable:hover {
     background-color: #fff;
+    color: #9e9e9e;
 }
 
 .tab a.hoverable:focus, .active {
     background-color: #ccc;
+}
+
+.active{
+    color: black !important;
 }
 
 .tabcontent {
